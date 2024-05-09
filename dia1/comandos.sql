@@ -23,7 +23,7 @@ CREATE TABLE public.clientes
 -- mostrar lista de tablas 
 postgres=# \d o \d+
 
---mostrar tablas con mayor información(detalles) 
+00000000--mostrar tablas con mayor información(detalles) 
 
 postgres=# \d nombre_tabla
 
