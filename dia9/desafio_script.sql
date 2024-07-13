@@ -34,6 +34,8 @@
 -- 5. Consultar en cuántas películas del top 100 participa Harrison Ford.(2 Puntos)
 SELECT pelicula FROM public.peliculas where id = 48 or id = 59 or id = 63 or id = 67 or id = 69 or id = 87 
 or id = 88 or id = 97; 
+-- correcciones del profesor
+select count(id_pelicula) from reparto where nombre = 'Harrison Ford';
 
 "Star Wars. Episodio IV: Una nueva esperanza"
 "Indiana Jones y la última cruzada"
@@ -46,6 +48,9 @@ or id = 88 or id = 97;
 
 -- 6. Indicar las películas estrenadas entre los años 1990 y 1999 ordenadas por título de manera ascendente.(1 punto)
 SELECT anio_estreno,pelicula from peliculas where anio_estreno >= 1990 and anio_estreno <= 1999 order by 2 asc;
+-- correcciones del profesor
+select * from peliculas where año between 1990 and 1999 order by titulo ASC;
+
 
 1999	"Matrix"
 1997	"Mejor... imposible"
